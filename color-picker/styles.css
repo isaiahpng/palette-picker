@@ -1,0 +1,33 @@
+/* Adds background color to the top navigation */
+.topnav {
+    background-color: #ffffff;
+    overflow: hidden;
+  }
+
+.topnav h1 {
+    color: #020005;
+    text-align: center;
+    font-size: 50px;
+    font-family:monospace;
+    transition-duration: 0.4s;
+  }
+
+.topnav h1:hover {
+    color: red;
+  }
+
+#color-hex {
+    background-color: blue;
+    text-align: center;
+    padding-top: 75px;
+    padding-bottom: 75px;
+    border-radius: 75px;
+    font-family:monospace;
+}
+
+.btns {
+    text-align: center; 
+    padding-top: 25px;
+    font-family:monospace;   
+}
+
