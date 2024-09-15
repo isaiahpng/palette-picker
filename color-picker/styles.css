@@ -16,13 +16,48 @@
     color: red;
   }
 
-#color-hex {
-    background-color: blue;
+#color-one {
+    background-color: #ff0000;
     text-align: center;
+    margin-left: 200px;
+    margin-right: 200px;
     padding-top: 75px;
     padding-bottom: 75px;
     border-radius: 75px;
     font-family:monospace;
+}
+
+#color-two {
+  background-color: orange;
+  text-align: center;
+  margin-left: 200px;
+  margin-right: 200px;
+  padding-top: 75px;
+  padding-bottom: 75px;
+  border-radius: 75px;
+  font-family:monospace;
+}
+
+#color-three {
+  background-color: #ffff00;
+  text-align: center;
+  margin-left: 200px;
+  margin-right: 200px;
+  padding-top: 75px;
+  padding-bottom: 75px;
+  border-radius: 75px;
+  font-family:monospace;
+}
+
+#color-four {
+  background-color: #008000;
+  text-align: center;
+  margin-left: 200px;
+  margin-right: 200px;
+  padding-top: 75px;
+  padding-bottom: 75px;
+  border-radius: 75px;
+  font-family:monospace;
 }
 
 .btns {
