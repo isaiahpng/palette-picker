@@ -8,7 +8,7 @@
     color: #020005;
     text-align: center;
     font-size: 50px;
-    font-family:monospace;
+    font-family: 'Barlow';
     transition-duration: 0.4s;
   }
 
@@ -65,4 +65,29 @@
     padding-top: 25px;
     font-family:monospace;   
 }
+
+#copy-btn {
+  background-color: transparent;
+  border: transparent;
+}
+
+#copy-btn svg {
+  width: 50px;
+  fill:#0e1111;
+}
+
+#copy-btn svg:hover {
+  fill: #dfdfdf;
+  transition: 0.3s;
+}
+
+#color-one input {
+  appearance: none;
+  border: none;
+  border-radius: 3px;
+  padding: 12px;
+  font-family: 'Barlow';
+  background-color: white;
+}
+
 

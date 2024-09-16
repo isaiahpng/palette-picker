@@ -4,7 +4,10 @@
     - Save Palette and email to self
     - Make website prettier (Better Navbar)
     - Mechanism to copy hex code 
+    - Mechanism to enter your own hex code
+        - Textbox needs a mechanism that turns the background color into a light one automatically
     - Buy me a kofi window
+
 */
 let hexCode;
 let hex;
@@ -13,7 +16,7 @@ const colors = ["color-one", "color-two", "color-three", "color-four"];
 
 function newHex() {
     hexCode = "#";    
-    // Code sourced from GeeksForGeeks
+    // Loop code from GeeksForGeeks
     for (let i = 0; i < 6; i++)
         hexCode += hexLetters[(Math.floor(Math.random() * 16))];
 
