@@ -1,12 +1,14 @@
 
 /*Plans:
     - Mechanism to lock one color or colors and change the other
+    - Lock and Unlock SVG
     - Save Palette and email to self
     - Make website prettier (Better Navbar)
     - Mechanism to copy hex code 
     - Mechanism to enter your own hex code
         - Textbox needs a mechanism that turns the background color into a light one automatically
     - Buy me a kofi window
+    - 
 
 */
 let hexCode;
@@ -29,4 +31,8 @@ function newPalette() {
         document.getElementById(colors[i]).innerText = hex;
         document.getElementById(colors[i]).style.backgroundColor = hex;
     }
+}
+
+function changeSvg() {
+    document.getElementById("unlock").style.color = "green";
 }
