@@ -16,55 +16,69 @@
     color: red;
   }
 
+.container {
+  display: flex;
+  justify-content: space-around;
+}
+
 #color-one {
     background-color: #ff0000;
-    align-self: center;
     height: 50px;
     width: 500px;
     text-align: center;
     margin-left: 200px;
     margin-right: 200px;
-    padding-top: 75px;
-    padding-bottom: 75px;
+    padding-top: 50px;
+    padding-bottom: 50px;
     border-radius: 75px;
-    font-family:monospace;
-    position: fixed;
-    display: inline-block;
-    
+    display: inline-block;    
+}
+
+#color-one-input {
+  appearance: none;
+  border: none;
+  border-radius: 75px;
+  padding: 12px;
+  font-family: 'Barlow';
+  background-color: #ff0000;
+  font-size: 15pt;
+  font-weight: 500;
+  text-align: center;
 }
 
 #color-two {
-  background-color: orange;
+  background-color: #ff0000;
+  height: 50px;
+  width: 500px;
   text-align: center;
   margin-left: 200px;
   margin-right: 200px;
-  padding-top: 75px;
-  padding-bottom: 75px;
+  padding-top: 50px;
+  padding-bottom: 50px;
   border-radius: 75px;
-  font-family:monospace;
+  display: inline-block;    
 }
 
-#color-three {
-  background-color: #ffff00;
-  text-align: center;
-  margin-left: 200px;
-  margin-right: 200px;
-  padding-top: 75px;
-  padding-bottom: 75px;
-  border-radius: 75px;
-  font-family:monospace;
+#color-two-input {
+appearance: none;
+border: none;
+border-radius: 75px;
+padding: 12px;
+font-family: 'Barlow';
+background-color: #ff0000;
+font-size: 15pt;
+font-weight: 500;
+text-align: center;
 }
 
-#color-four {
-  background-color: #008000;
-  text-align: center;
-  margin-left: 200px;
-  margin-right: 200px;
-  padding-top: 75px;
-  padding-bottom: 75px;
-  border-radius: 75px;
-  font-family:monospace;
-}
+/* clears the ‘X’ from Internet Explorer */
+input[type=search]::-ms-clear { display: none; width : 0; height: 0; }
+input[type=search]::-ms-reveal { display: none; width : 0; height: 0; }
+/* clears the ‘X’ from Chrome */
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration { display: none; }
 
 .btns {
     text-align: center; 
@@ -72,31 +86,5 @@
     font-family:monospace;   
 }
 
-#copy-btn {
-  background-color: transparent;
-  border: transparent; 
-}
-
-#copy-btn svg {
-  width: 40px;
-  fill:#0e1111;
-  padding-bottom: 10px;
-}
-
-#copy-btn svg:hover {
-  fill: #dfdfdf;
-  transition: 0.3s;
-}
-
-#color-one input {
-  appearance: none;
-  border: none;
-  border-radius: 3px;
-  padding: 12px;
-  font-family: 'Barlow';
-  background-color: #DF2020;
-  font-size: 15pt;
-  text-align:
-}
 
 

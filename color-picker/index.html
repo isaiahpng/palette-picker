@@ -15,37 +15,24 @@
     <div class="topnav">
         <h1 id="title">Palette Picker</h1>
     </div>
+    <div class="btns">
+        <button id="delete-btn" onclick="delColor()">-</button>
+        <button id="add-btn" onclick="addColor()">+</button>
+        
+
+    </div>
     
-    <div class="color-one">
+    <div class="container">
         <h2 id="color-one">
-            <form method="GET" action="/search">
-                <input type="search" name="query" up-autosubmit value="#ff0000">
-            </form>
-            
-            <button id="copy-btn">
-                <!-- Uploaded to: SVG Repo, www.svgrepo.com, Transformed by: SVG Repo Mixer Tools -->
-                <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
-                    <g id="SVGRepo_bgCarrier" stroke-width="0"/>
-                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
-                    <g id="SVGRepo_iconCarrier">
-                    <path d="M464 0c26.51 0 48 21.49 48 48v288c0 26.51-21.49 48-48 48H176c-26.51 0-48-21.49-48-48V48c0-26.51 21.49-48 48-48h288M176 416c-44.112 0-80-35.888-80-80V128H48c-26.51 0-48 21.49-48 48v288c0 26.51 21.49 48 48 48h288c26.51 0 48-21.49 48-48v-48H176z"/>
-                    </g>
-                </svg>
-            </button>
-        </h2>     
+            <form onsubmit="manualChange()" id="myForm">
+                <input type="text" name="query" value="#ff0000" id="color-one-input">
+            </form> 
+        </h2>
     </div>
 
-    <div class="color-two">
-        <h2 id="color-two">#ffa500</h2>
-    </div>
 
-    <div class="color-three">
-        <h2 id="color-three">#ffff00</h2>
-    </div>
 
-    <div class="color-four">
-        <h2 id="color-four">#008000</h2>
-    </div>
+
 
     <div class="btns">
         <button id="save-btn">Save</button>
