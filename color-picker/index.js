@@ -50,19 +50,13 @@ function newPalette() {
     document.getElementById("color-one-input").style.backgroundColor = hex;
 }
 
-var form = document.getElementById("myForm");
-
-function manualChange(event) {
+function Chg() {
     let input;
-    input = "#123123";
-    document.getElementById("#color-one-input").value = "hello"
+    input = document.getElementById("color-one-input");
+    document.getElementById("color-one-input").value = input;
     document.getElementById("color-one").style.backgroundColor = input;
     document.getElementById("color-one-input").value = input;
-    event.preventDefault();
 }
-
-form.addEventListener('Enter', manualChange);
-
 
 function addColor() {
     console.log("color added");
@@ -70,7 +64,5 @@ function addColor() {
 
 function delColor() {
     console.log("color deleted");
-
-
 }
 
