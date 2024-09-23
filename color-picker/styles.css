@@ -9,12 +9,24 @@
     text-align: center;
     font-size: 50px;
     font-family: 'Barlow';
-    transition-duration: 0.4s;
-  }
+    transition-duration: 0.7s;
+    margin-bottom: 0px;
+}
+
+.topnav h2 {
+  margin-top: 0px;
+  color: #020005;
+  text-align: center;
+  font-size: 18px;
+  font-family: 'Barlow';
+  font-style: oblique;
+  font-weight: 500;
+  transition-duration: 0.5s;
+}
 
 .topnav h1:hover {
-    color: red;
-  }
+    color: #007BFF
+}
 
 .container {
   display: flex;
@@ -22,14 +34,14 @@
 }
 
 #color-one {
-    background-color: #ff0000;
+    background-color: #8B0000;
     height: 50px;
     width: 500px;
     text-align: center;
     margin-left: 200px;
     margin-right: 200px;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 40px;
+    padding-bottom: 40px;
     border-radius: 75px;
     display: inline-block;    
 }
@@ -40,35 +52,110 @@
   border-radius: 75px;
   padding: 12px;
   font-family: 'Barlow';
-  background-color: #ff0000;
+  background-color: #8B0000;
   font-size: 15pt;
   font-weight: 500;
   text-align: center;
 }
 
 #color-two {
-  background-color: #ff0000;
+  background-color: #CC5500;
   height: 50px;
   width: 500px;
   text-align: center;
   margin-left: 200px;
   margin-right: 200px;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 40px;
+  padding-bottom: 40px;
   border-radius: 75px;
   display: inline-block;    
 }
 
 #color-two-input {
-appearance: none;
-border: none;
-border-radius: 75px;
-padding: 12px;
-font-family: 'Barlow';
-background-color: #ff0000;
-font-size: 15pt;
-font-weight: 500;
-text-align: center;
+  appearance: none;
+  border: none;
+  border-radius: 75px;
+  padding: 12px;
+  font-family: 'Barlow';
+  background-color: #CC5500;
+  font-size: 15pt;
+  font-weight: 500;
+  text-align: center;
+}
+
+#color-three {
+  background-color: #D5B60A;
+  height: 50px;
+  width: 500px;
+  text-align: center;
+  margin-left: 200px;
+  margin-right: 200px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  border-radius: 75px;
+  display: inline-block;    
+}
+
+#color-three-input {
+  appearance: none;
+  border: none;
+  border-radius: 75px;
+  padding: 12px;
+  font-family: 'Barlow';
+  background-color: #D5B60A;
+  font-size: 15pt;
+  font-weight: 500;
+  text-align: center;
+}
+
+#color-four {
+  background-color: #002D04;
+  height: 50px;
+  width: 500px;
+  text-align: center;
+  margin-left: 200px;
+  margin-right: 200px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  border-radius: 75px;
+  display: inline-block;    
+}
+
+#color-four-input {
+  appearance: none;
+  border: none;
+  border-radius: 75px;
+  padding: 12px;
+  font-family: 'Barlow';
+  background-color: #002D04;
+  font-size: 15pt;
+  font-weight: 500;
+  text-align: center;
+}
+
+#color-five {
+  background-color: #051650;
+  height: 50px;
+  width: 500px;
+  text-align: center;
+  margin-left: 200px;
+  margin-right: 200px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  border-radius: 75px;
+  display: inline-block;    
+}
+
+#color-five-input {
+  appearance: none;
+  border: none;
+  border-radius: 75px;
+  padding: 12px;
+  font-family: 'Barlow';
+  background-color: #051650;
+  font-size: 15pt;
+  font-weight: 500;
+  text-align: center;
 }
 
 /* clears the ‘X’ from Internet Explorer */

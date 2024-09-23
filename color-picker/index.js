@@ -1,24 +1,17 @@
 
 /*Plans:
     - Mechanism to lock one color or colors and change the other
-    - Lock and Unlock SVG
-    - Save Palette and email to self
-    - Make website prettier (Better Navbar)
-    - Mechanism to copy hex code 
-    - Mechanism to enter your own hex code
-        - Textbox needs a mechanism that turns the background color into a light one automatically
     - Buy me a kofi window
-    - 
-
+    - Light and Dark Mode
 */
-let colorNum = 3;
+
 let hexCode;
 let hex;
 let hexLetters = "0123456789ABCDEF";
-const colors = ["color-one", "color-two", "color-three", "color-four"];
-let comp;
-let white = "#FFFFFF"
+const colors = ["color-one", "color-two", "color-three", "color-four", "color-five"];
 
+
+/* Function to generate a new random hex code */
 function newHex() {
     hexCode = "#";    
     // Loop code from GeeksForGeeks
@@ -28,41 +21,50 @@ function newHex() {
     return(hexCode);   
 }
 
-function hexToRgb(h) {
-    return['0x'+h[1]+h[2]|0,'0x'+h[3]+h[4]|0,'0x'+h[5]+h[6]|0]
-}
+/*Generates a new palette everytime the spacebar is pressed  */
+document.addEventListener("keydown", (event) => {
+    for (i=0; i<5; i++){
+        if(event.key === " "){
+            hex = newHex();
+            document.getElementById(colors[i]).style.backgroundColor = hex;
+            document.getElementById(colors[i] + "-input").value = hex;
+            document.getElementById(colors[i] + "-input").style.backgroundColor = hex;
+        }
+    }
+})
 
-function rgbToHex(r,g,b) {
-    return"#"+((1<<24)+(r<<16)+(g<<8)+ b).toString(16).slice(1);
-}
+/*Allows the color to be manually entered by the user */
+const inputColOne = document.getElementById("color-one-input");
+    inputColOne.addEventListener("input", (event) => {
+        let input = inputColOne.value;
+        document.getElementById("color-one").style.backgroundColor = input;
+        document.getElementById("color-one-input").style.backgroundColor = input;          
+    });
 
-function avgHex(h1,h2) {
-    a=hexToRgb(h1);
-    b=hexToRgb(h2); 
-    
-    return rgbToHex(~~((a[0]+b[0])/2),~~((a[1]+b[1])/2),~~((a[2]+b[2])/2));
-}
+const inputColTwo = document.getElementById("color-two-input");
+    inputColTwo.addEventListener("input", (event) => {
+        let input = inputColTwo.value;
+        document.getElementById("color-two").style.backgroundColor = input;
+        document.getElementById("color-two-input").style.backgroundColor = input;     
+    });
 
-function newPalette() {
-    hex = newHex();
-    document.getElementById("color-one").style.backgroundColor = hex;
-    document.getElementById("color-one-input").value = hex;
-    document.getElementById("color-one-input").style.backgroundColor = hex;
-}
+const inputColThree = document.getElementById("color-three-input");
+    inputColThree.addEventListener("input", (event) => {
+        let input = inputColThree.value;
+        document.getElementById("color-three").style.backgroundColor = input;
+        document.getElementById("color-three-input").style.backgroundColor = input;     
+    });
 
-function Chg() {
-    let input;
-    input = document.getElementById("color-one-input");
-    document.getElementById("color-one-input").value = input;
-    document.getElementById("color-one").style.backgroundColor = input;
-    document.getElementById("color-one-input").value = input;
-}
+const inputColFour = document.getElementById("color-four-input");
+    inputColFour.addEventListener("input", (event) => {
+        let input = inputColFour.value;
+        document.getElementById("color-four").style.backgroundColor = input;
+        document.getElementById("color-four-input").style.backgroundColor = input;     
+    });
 
-function addColor() {
-    console.log("color added");
-}
-
-function delColor() {
-    console.log("color deleted");
-}
-
+const inputColFive = document.getElementById("color-five-input");
+    inputColFive.addEventListener("input", (event) => {
+        let input = inputColFive.value;
+        document.getElementById("color-five").style.backgroundColor = input;
+        document.getElementById("color-five-input").style.backgroundColor = input;     
+    });

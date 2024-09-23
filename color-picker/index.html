@@ -13,34 +13,40 @@
 </head>
 <body>
     <div class="topnav">
-        <h1 id="title">Palette Picker</h1>
+        <h1 id="title" onClick="window.location.reload()">Palette Picker</h1>
+        <h2>press space for a new palette :)</h2>
     </div>
-    <div class="btns">
-        <button id="delete-btn" onclick="delColor()">-</button>
-        <button id="add-btn" onclick="addColor()">+</button>
-        
 
-    </div>
-    
-    <div class="container">
+    <div class="container" id="color-container">
         <h2 id="color-one">
-            <form id="myForm">
-                <input type="text" name="query" value="#ff0000" id="color-one-input">       
-            </form> 
-            <button id="change" onclick="Chg()">0</button>
+                <input type="text" name="query" value="#8B0000" id="color-one-input">
         </h2>
     </div>
 
-
-
-
-
-    <div class="btns">
-        <button id="save-btn">Save</button>
-        <button id="reset-btn" onclick="newPalette()">Reset</button>
+    <div class="container" id="color-container">
+        <h2 id="color-two">
+                <input type="text" name="query" value="#CC5500" id="color-two-input">
+        </h2>
     </div>
 
-    
+    <div class="container" id="color-container">
+        <h2 id="color-three">
+                <input type="text" name="query" value="#D5B60A" id="color-three-input">
+        </h2>
+    </div>
+
+    <div class="container" id="color-container">
+        <h2 id="color-four">
+                <input type="text" name="query" value="#002D04" id="color-four-input">
+        </h2>
+    </div>
+
+    <div class="container" id="color-container">
+        <h2 id="color-five">
+                <input type="text" name="query" value="#051650" id="color-five-input">
+        </h2>
+    </div>
+
     <script src="index.js"></script>    
 </body>
 </html>
