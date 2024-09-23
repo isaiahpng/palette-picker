@@ -1,0 +1,177 @@
+/* Adds background color to the top navigation */
+.topnav {
+    background-color: #ffffff;
+    overflow: hidden;
+  }
+
+.topnav h1 {
+    color: #020005;
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Barlow';
+    transition-duration: 0.7s;
+    margin-bottom: 0px;
+}
+
+.topnav h2 {
+  margin-top: 0px;
+  color: #020005;
+  text-align: center;
+  font-size: 18px;
+  font-family: 'Barlow';
+  font-style: oblique;
+  font-weight: 500;
+  transition-duration: 0.5s;
+}
+
+.topnav h1:hover {
+    color: #007BFF
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+}
+
+#color-one {
+    background-color: #8B0000;
+    height: 50px;
+    width: 500px;
+    text-align: center;
+    margin-left: 200px;
+    margin-right: 200px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    border-radius: 75px;
+    display: inline-block;    
+}
+
+#color-one-input {
+  appearance: none;
+  border: none;
+  border-radius: 75px;
+  padding: 12px;
+  font-family: 'Barlow';
+  background-color: #8B0000;
+  font-size: 15pt;
+  font-weight: 500;
+  text-align: center;
+}
+
+#color-two {
+  background-color: #CC5500;
+  height: 50px;
+  width: 500px;
+  text-align: center;
+  margin-left: 200px;
+  margin-right: 200px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  border-radius: 75px;
+  display: inline-block;    
+}
+
+#color-two-input {
+  appearance: none;
+  border: none;
+  border-radius: 75px;
+  padding: 12px;
+  font-family: 'Barlow';
+  background-color: #CC5500;
+  font-size: 15pt;
+  font-weight: 500;
+  text-align: center;
+}
+
+#color-three {
+  background-color: #D5B60A;
+  height: 50px;
+  width: 500px;
+  text-align: center;
+  margin-left: 200px;
+  margin-right: 200px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  border-radius: 75px;
+  display: inline-block;    
+}
+
+#color-three-input {
+  appearance: none;
+  border: none;
+  border-radius: 75px;
+  padding: 12px;
+  font-family: 'Barlow';
+  background-color: #D5B60A;
+  font-size: 15pt;
+  font-weight: 500;
+  text-align: center;
+}
+
+#color-four {
+  background-color: #002D04;
+  height: 50px;
+  width: 500px;
+  text-align: center;
+  margin-left: 200px;
+  margin-right: 200px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  border-radius: 75px;
+  display: inline-block;    
+}
+
+#color-four-input {
+  appearance: none;
+  border: none;
+  border-radius: 75px;
+  padding: 12px;
+  font-family: 'Barlow';
+  background-color: #002D04;
+  font-size: 15pt;
+  font-weight: 500;
+  text-align: center;
+}
+
+#color-five {
+  background-color: #051650;
+  height: 50px;
+  width: 500px;
+  text-align: center;
+  margin-left: 200px;
+  margin-right: 200px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  border-radius: 75px;
+  display: inline-block;    
+}
+
+#color-five-input {
+  appearance: none;
+  border: none;
+  border-radius: 75px;
+  padding: 12px;
+  font-family: 'Barlow';
+  background-color: #051650;
+  font-size: 15pt;
+  font-weight: 500;
+  text-align: center;
+}
+
+/* clears the ‘X’ from Internet Explorer */
+input[type=search]::-ms-clear { display: none; width : 0; height: 0; }
+input[type=search]::-ms-reveal { display: none; width : 0; height: 0; }
+/* clears the ‘X’ from Chrome */
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration { display: none; }
+
+.btns {
+    text-align: center; 
+    padding-top: 25px;
+    font-family:monospace;   
+}
+
+
+
