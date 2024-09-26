@@ -28,6 +28,11 @@
     color: #007BFF
 }
 
+a {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+}
 .container {
   display: flex;
   justify-content: space-around;
